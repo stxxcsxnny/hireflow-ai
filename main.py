@@ -25,7 +25,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-client = genai.Client(api_key=os.getenv("groqKey"))
+client = genai.Client(api_key=os.getenv("groqkey"))
 
 @app.get("/")
 def home():
