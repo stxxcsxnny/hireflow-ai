@@ -22,6 +22,8 @@ app.add_middleware(
     allow_origins=[
         "https://hireflowsfrontend.vercel.app",
         "http://localhost:5173",
+        "https://hireflowsfrontend-b3y34zxlv-sunnys-projects-5051540b.vercel.app",
+        
     ],
     allow_credentials=True,
     allow_methods=["*"],
