@@ -121,13 +121,13 @@ function App() {
       setLoading(true);
       setResult(null);
 
-      const response = await fetch(
-        "http://127.0.0.1:8000/match-resume",
-        {
-          method: "POST",
-          body: formData,
-        }
-      );
+    const response = await fetch(
+  `${import.meta.env.VITE_API_URL}/match-resume`,
+  {
+    method: "POST",
+    body: formData,
+  }
+);
 
       const text = await response.text();
 
