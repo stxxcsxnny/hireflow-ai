@@ -121,8 +121,10 @@ function App() {
       setLoading(true);
       setResult(null);
 
-    const response = await fetch(
-  `${import.meta.env.VITE_API_URL}/match-resume`,
+   const API_URL = import.meta.env.VITE_API_URL.replace(/\/+$/, "");
+
+const response = await fetch(
+  `${API_URL}/match-resume`,
   {
     method: "POST",
     body: formData,
